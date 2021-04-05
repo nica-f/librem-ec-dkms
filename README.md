@@ -1,4 +1,8 @@
-# librem-ec-acpi-dkms
+# Librem EC ACPI Driver (DKMS)
 
-Linux kernel ACPI platform driver for the Librem EC firmware.
-Necessary to provide user space control for notification LEDs, battery charging thresholds, keyboard backlight, WiFi/BT LED
+This provides the librem_ec_acpi in-tree driver for systems missing it.
+
+Based on System76 EC ACPI DKMS driver,
+Jeremy Soller <jeremy@system76.com>
+Copyright (C) 2019 System76
+https://github.com/pop-os/system76-acpi-dkms.git

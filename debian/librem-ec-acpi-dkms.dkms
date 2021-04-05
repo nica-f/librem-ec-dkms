@@ -1,0 +1,5 @@
+PACKAGE_NAME="librem_ec_acpi"
+PACKAGE_VERSION="#MODULE_VERSION#"
+BUILT_MODULE_NAME[0]="librem_ec_acpi"
+DEST_MODULE_LOCATION[0]="/updates/dkms"
+AUTOINSTALL="yes"

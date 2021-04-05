@@ -1,0 +1,6 @@
+librem-ec-acpi-dkms (1.0.0) focal; urgency=medium
+
+  * Initial release
+  * Add input interface
+
+ -- Nicole Faerber <nicole.faerber@puri.sm>  Mon, 05 Apr 2021 14:00:00 +0200
