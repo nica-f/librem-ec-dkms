@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: librem-ec-acpi-dkms
-Source: https://source.puri.sm:nicole.faerber/librem-ec-acpi-dkms.git
+Source: https://source.puri.sm/nicole.faerber/librem-ec-acpi-dkms.git
 
 Files: *
 Copyright: Copyright 2019 System76
-License: GPL-3
+License: GPL-2

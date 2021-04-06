@@ -1,4 +1,4 @@
-librem-ec-acpi-dkms (1.0.0) focal; urgency=medium
+librem-ec-acpi-dkms (1.0.0) byzanthium; urgency=medium
 
   * Initial release
   * Add input interface

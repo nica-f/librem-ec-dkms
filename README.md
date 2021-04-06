@@ -1,6 +1,7 @@
 # Librem EC ACPI Driver (DKMS)
 
-This provides the librem_ec_acpi in-tree driver for systems missing it.
+This provides the librem_ec_acpi driver for Purism systems missing it
+(as of V1.0.0 Purism Librem 14 laptop).
 
 Based on System76 EC ACPI DKMS driver,
 Jeremy Soller <jeremy@system76.com>
