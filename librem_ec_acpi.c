@@ -49,11 +49,11 @@ MODULE_DEVICE_TABLE(acpi, device_ids);
 
 // Array of keyboard LED brightness levels
 static const enum led_brightness kb_levels[] = {
-	48,
-	72,
-	96,
-	144,
-	192,
+	0,
+	128,
+	172,
+	215,
+	254,
 	255
 };
 
@@ -675,7 +675,7 @@ static int librem_ec_add(struct acpi_device *acpi_dev)
 	data->kb_led.flags = LED_BRIGHT_HW_CHANGED | LED_CORE_SUSPENDRESUME;
 	data->kb_led.brightness_get = kb_led_get;
 	data->kb_led.brightness_set_blocking = kb_led_set;
-	data->kb_led.max_brightness = 5;
+	data->kb_led.max_brightness = 255;
 	err = devm_led_classdev_register(&acpi_dev->dev, &data->kb_led);
 	if (err)
 		return err;
