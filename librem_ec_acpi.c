@@ -2,6 +2,7 @@
 /*
  * Librem EC ACPI Driver
  *
+ * Nicole Faerber
  * Copyright (C) 2021 Purism
  * based on System76 ACPI Driver
  * Jeremy Soller <jeremy@system76.com>

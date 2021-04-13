@@ -3,5 +3,5 @@ Upstream-Name: librem-ec-acpi-dkms
 Source: https://source.puri.sm/nicole.faerber/librem-ec-acpi-dkms.git
 
 Files: *
-Copyright: Copyright 2019 System76
+Copyright: Copyright 2021, Nicole Faerber
 License: GPL-2
