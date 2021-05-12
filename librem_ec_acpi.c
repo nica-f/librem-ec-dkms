@@ -44,7 +44,7 @@ struct librem_ec_data {
 
 static const struct acpi_device_id device_ids[] = {
 	{"316D4C14", 0},
-	{"PURI4543", 0}
+	{"PURI4543", 0},
 	{"", 0},
 };
 MODULE_DEVICE_TABLE(acpi, device_ids);
