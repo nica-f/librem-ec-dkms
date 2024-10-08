@@ -17,6 +17,7 @@
 #include <linux/hwmon.h>
 #include <linux/hwmon-sysfs.h>
 #include <linux/init.h>
+#include <linux/leds.h>
 #include <linux/input.h>
 #include <linux/kernel.h>
 #include <linux/leds.h>
@@ -24,6 +25,7 @@
 #include <linux/pci_ids.h>
 #include <linux/power_supply.h>
 #include <linux/types.h>
+#include <linux/sysfs.h>
 #include <linux/version.h>
 
 #include <acpi/battery.h>
@@ -731,8 +733,8 @@ static int librem_ec_remove(struct acpi_device *acpi_dev)
 	librem_ec_battery_exit();
 
 	devm_led_classdev_unregister(&acpi_dev->dev, &data->ap_led);
-
 	devm_led_classdev_unregister(&acpi_dev->dev, &data->kb_led);
+
 	if (data->nfan)
 		kfree(data->nfan);
 	if (data->ntmp)
@@ -779,7 +781,9 @@ static SIMPLE_DEV_PM_OPS(librem_ec_pm, librem_ec_suspend, librem_ec_resume);
 
 static struct acpi_driver librem_ec_driver = {
 	.name = "Librem EC ACPI Driver",
+#if LINUX_VERSION_CODE < KERNEL_VERSION(6,10,0)
 	.owner = THIS_MODULE,
+#endif
 	.class = "hotkey",
 	.ids = device_ids,
 	// .flags = ACPI_DRIVER_ALL_NOTIFY_EVENTS,
