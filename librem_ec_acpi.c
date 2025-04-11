@@ -734,6 +734,9 @@ static int librem_ec_remove(struct acpi_device *acpi_dev)
 
 	devm_led_classdev_unregister(&acpi_dev->dev, &data->ap_led);
 	devm_led_classdev_unregister(&acpi_dev->dev, &data->kb_led);
+	devm_led_classdev_unregister(&acpi_dev->dev, &data->notif_led_r);
+	devm_led_classdev_unregister(&acpi_dev->dev, &data->notif_led_g);
+	devm_led_classdev_unregister(&acpi_dev->dev, &data->notif_led_b);
 
 	if (data->nfan)
 		kfree(data->nfan);
